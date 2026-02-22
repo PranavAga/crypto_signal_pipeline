@@ -11,6 +11,13 @@ python run.py --input data.csv --output metrics.json --log_file pipeline.log
 ```
 
 # Docker Instructions:
+```bash
+# Build Docker image
+docker build -t mlops-task .
+
+# Run Docker container
+docker run --rm mlops-task
+```
 
 # Expected Output:
 The output will be a JSON file containing the calculated metrics, which will look like this:
