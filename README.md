@@ -1,0 +1,36 @@
+# Setup Instructions
+```bash
+# Install dependencies
+pip install -r requirements.txt
+```
+
+# Local Execution Instructions:
+```bash
+# Run locally
+python run.py --input data.csv --output metrics.json --log_file pipeline.log
+```
+
+# Docker Instructions:
+
+# Expected Output:
+The output will be a JSON file containing the calculated metrics, which will look like this:
+```json
+{
+    "version": "1.0",
+    "rows_processed": 100,
+    "metric": "signal_rate",
+    "value": 0.45,
+    "latency_ms": 150,
+    "seed": 42,
+    "status": "success"
+}
+```
+
+# Dependencies:
+- Python 3.12+
+- pandas
+- numpy
+- PyYAML
+
+# Note:
+- The `data.csv` contains randomly generated cryptocurrency price data for testing purposes.
