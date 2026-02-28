@@ -7,7 +7,7 @@ pip install -r requirements.txt
 # Local Execution Instructions:
 ```bash
 # Run locally
-python run.py --input data.csv --output metrics.json --log_file pipeline.log
+python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
 ```
 
 # Docker Instructions:
@@ -39,5 +39,3 @@ The output will be a JSON file containing the calculated metrics, which will loo
 - numpy
 - PyYAML
 
-# Note:
-- The `data.csv` contains randomly generated cryptocurrency price data for testing purposes.
